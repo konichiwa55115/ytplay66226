@@ -9,7 +9,7 @@ bot = Client(
     "playbot",
     api_id=17983098,
     api_hash="ee28199396e0925f1f44d945ac174f64",
-    bot_token="5545470781:AAGjzXBuTOeJ1JulON1Cw0I2ZP8kebs2Alk"
+    bot_token="5938308636:AAF9sD2Jtw3sFp4SDI1NEKB7dV0GQj9Z4rE"
 )
 @bot.on_message(filters.command('start') & filters.private)
 def command1(bot,message):
