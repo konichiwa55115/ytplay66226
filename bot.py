@@ -24,7 +24,7 @@ def _telegram_file(client, message):
   
   message.reply_text("جار التحويل")
   cmd(f'yt-dlp --flat-playlist -i --print-to-file url links.txt {url}')
-  with open('links.txt', 'r') as file:
+  with open('links.txt', 'rb') as f:
       bot.send_document(message.chat.id, f)
   cmd(f'unlink links.txt')
 bot.run()
